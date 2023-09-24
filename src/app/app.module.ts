@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ChildAComponent } from './child-a/child-a.component';
+import { ChildBComponent } from './child-b/child-b.component';
 
 // @NgModule 装饰器用于定义模块，包括声明该模块使用的组件、引入的模块、提供的服务等。
 // @NgModule 是 Angular 模块装饰器，用于定义和配置 Angular 模块。
@@ -16,7 +18,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppComponent,
     FirstComponent,
     SecondComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ChildAComponent,
+    ChildBComponent
   ],
   // imports 是一个数组，包含了本模块所依赖的其他 Angular 模块。
   imports: [
