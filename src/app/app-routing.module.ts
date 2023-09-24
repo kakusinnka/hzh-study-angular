@@ -12,6 +12,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const routes: Routes = [
   { path: 'first-component', component: FirstComponent },
   { path: 'second-component', component: SecondComponent },
+  // 前缀匹配 ["/abc" 或 "/abc/..."]
+  { path: 'abc', redirectTo: '/first-component', pathMatch: 'prefix' },
+  // 全路径匹配 ["/efg" 或 "/efg/"]
+  { path: 'efg', redirectTo: '/second-component', pathMatch: 'full' },
   // 最后一条 path 为 ** 的路由是通配符路由。
   // 如果请求的 URL 与列表中前面的任何路径都不匹配，则路由器会选择此路由并将用户发送到 PageNotFoundComponent 。
   { path: '**', component: PageNotFoundComponent },
