@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
 
 // @NgModule 装饰器用于定义模块，包括声明该模块使用的组件、引入的模块、提供的服务等。
 // @NgModule 是 Angular 模块装饰器，用于定义和配置 Angular 模块。
@@ -12,7 +13,8 @@ import { FirstComponent } from './first/first.component';
   // declarations 是一个数组，包含了本模块中声明的所有组件、指令、管道等的列表。
   declarations: [
     AppComponent,
-    FirstComponent
+    FirstComponent,
+    SecondComponent
   ],
   // imports 是一个数组，包含了本模块所依赖的其他 Angular 模块。
   imports: [
