@@ -5,9 +5,25 @@
     <li>
       <!-- routerLink 是 Angular 路由的指令，用于指定当用户点击链接时要导航到的目标路由。 -->
       <!-- routerLinkActive 是 Angular 路由的指令，用于设置当链接指向的路由是活动路由时应用的 CSS 类。 -->
-      <a routerLink="/first-component" routerLinkActive="hzh-active">First Component</a>
+      <a routerLink="/first-component" routerLinkActive="hzh-active1">First Component</a>
     </li>
-    <li><a routerLink="/second-component" routerLinkActive="hzh-active">Second Component</a>
+    <li>
+      <!-- 静态路由绑定 -->
+      <a routerLink="/second-component" routerLinkActive="hzh-active2">Second Component</a>
+    </li>
+    <li>
+      <!-- 动态路由绑定 带一个变量 -->
+      <a [routerLink]="[dynamicRouterLink]" routerLinkActive="hzh-active3">Second Component</a>
+    </li>
+    <li>
+      <!-- 动态路由绑定 带多个变量 -->
+      <a [routerLink]="[dynamicRouterLink, '1', '2' ]" routerLinkActive="hzh-active4">Second Component</a>
+    </li>
+    <li>
+      <!-- 动态路由绑定 带参数 -->
+      <a [routerLink]="[dynamicRouterLink + '/param', { foo1: 'abc', foo2: 'def' } ]"
+        routerLinkActive="hzh-active5">Second
+        Component</a>
     </li>
   </ul>
 </nav>

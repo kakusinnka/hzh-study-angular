@@ -30,6 +30,9 @@ const routes: Routes = [
     ],
   },
   { path: 'second-component', component: SecondComponent },
+  { path: 'second-component-dynamic', component: SecondComponent },
+  { path: 'second-component-dynamic/1/2', component: SecondComponent },
+  { path: 'second-component-dynamic/param/', component: SecondComponent },
   // 前缀匹配 ["/abc" 或 "/abc/..."]
   { path: 'abc', redirectTo: '/first-component', pathMatch: 'prefix' },
   // 全路径匹配 ["/efg" 或 "/efg/"]
