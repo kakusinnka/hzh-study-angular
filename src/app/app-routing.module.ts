@@ -40,6 +40,7 @@ const routes: Routes = [
   // 最后一条 path 为 ** 的路由是通配符路由。
   // 如果请求的 URL 与列表中前面的任何路径都不匹配，则路由器会选择此路由并将用户发送到 PageNotFoundComponent 。
   { path: '**', component: PageNotFoundComponent },
+  // 请注意，通配符路由位于数组的末尾。路由的顺序很重要，因为 Angular 按顺序应用路由并使用它找到的第一个匹配项。
 ];
 
 @NgModule({
